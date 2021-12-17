@@ -1,0 +1,12 @@
+server:
+  port: 9296
+  
+spring:  application:    name: CONFIG-SERVER
+  profiles:
+    active: native
+    cloud:
+     config:
+       server:
+           native:
+              searchLocations: file:///C:/confsvr/configservice
+#  cloud:#    config:#      server:#        git:#          uri: https://github.com/shabbirdwd53/config-server    

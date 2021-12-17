@@ -1,0 +1,14 @@
+package com.microsvc.orderservice.repo;
+
+
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+import com.microsvc.orderservice.entity.Order;
+
+public interface OrderRepository extends JpaRepository<Order,Long>{
+	
+	Order findByOrderId(Long orderId);
+}

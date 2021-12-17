@@ -1,0 +1,31 @@
+server:
+  port: 9191
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:    gateway:      routes:
+       - id : ORDER-SERVICE
+         uri: lb://ORDER-SERVICE
+         predicates:
+           - Path=/api/v1/orders/**
+         filters:          - name : CircuitBreaker
+            args:              name : ORDER-SERVICE
+              fallbackuri : forward:/api/v1/orderfallback         - id : PRODUCT-SERVICE
+         uri: lb://PRODUCT-SERVICE
+         predicates:
+           - Path=/api/v1/products/**
+         filters:
+          - name : CircuitBreaker
+            args:
+              name : PRODUCT-SERVICE
+              fallbackuri : forward:/api/v1/productfallback          
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+
+
+    
+       
