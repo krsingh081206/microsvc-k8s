@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.microsvc</groupId>
 	<artifactId>serviceregistry</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.3</version>
 	<name>serviceregistry</name>
 	<description>ServiceRegistry</description>
 	<properties>
@@ -59,7 +59,7 @@
 						</jvmFlags>
 					</container>
 					<to>
-                        <image>registry.hub.docker.com/krsingh081206/ms-${project.artifactId}:latest</image>
+                        <image>registry.hub.docker.com/krsingh081206/ms-${project.artifactId}:{project.version}</image>
                     </to>
 				</configuration>
 				

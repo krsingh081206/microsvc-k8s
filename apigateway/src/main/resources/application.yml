@@ -21,11 +21,16 @@ spring:
               name : PRODUCT-SERVICE
               fallbackuri : forward:/api/v1/productfallback          
 
+
+
 eureka:
+  instance:
+    preferIpAddress: true
+    hostname: eureka-0
   client:
-    fetch-registry: true
-    register-with-eureka: true
-
-
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
     
        
