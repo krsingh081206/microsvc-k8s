@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: product-service-app
-          image: krsingh081206/ms-productservice:0.0.3
+          image: krsingh081206/ms-productservice:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 9001

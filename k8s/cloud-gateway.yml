@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cloud-gateway-app
-          image: krsingh081206/ms-apigateway:0.0.3
+          image: krsingh081206/ms-apigateway:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 9191

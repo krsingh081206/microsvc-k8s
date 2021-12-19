@@ -63,7 +63,7 @@
 						</jvmFlags>
 					</container>
 					<to>
-                        <image>registry.hub.docker.com/krsingh081206/ms-${project.artifactId}:{project.version}</image>
+                        <image>registry.hub.docker.com/krsingh081206/ms-${project.artifactId}:latest</image>
                     </to>
 				</configuration>
 				

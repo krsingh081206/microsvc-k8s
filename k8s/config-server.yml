@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cloud-config-server-app
-          image: krsingh081206/ms-cloudconfig:0.0.3
+          image: krsingh081206/ms-cloudconfig:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 9296

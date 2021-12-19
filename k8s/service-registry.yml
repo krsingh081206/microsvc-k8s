@@ -50,7 +50,7 @@ spec:
     spec:
       containers:
         - name: eureka
-          image: krsingh081206/ms-serviceregistry:0.0.3
+          image: krsingh081206/ms-serviceregistry:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8761
